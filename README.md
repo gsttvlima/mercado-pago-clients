@@ -13,7 +13,7 @@
 
 ## 📸 Screenshot
 
-<img src="https://user-images.githubusercontent.com/115879524/200085699-095c9505-5d94-4dd3-b1fa-a0b9a25a94ed.png" width="400" />
+<img src="https://user-images.githubusercontent.com/115879524/200085699-095c9505-5d94-4dd3-b1fa-a0b9a25a94ed.png" width="600" />
 
 ## 👀 Demo
 
