@@ -15,29 +15,29 @@ class Client{
 
     public function saveClient(){
 
-        $customer = new Customer();
-        $customer->email = $this->fields['email'];
-        $customer->first_name = $this->fields['first_name'];
-        $customer->last_name = $this->fields['last_name'];
-        $customer->save();
+        $client = new Customer();
+        $client->email = $this->fields['email'];
+        $client->first_name = $this->fields['first_name'];
+        $client->last_name = $this->fields['last_name'];
+        $client->save();
 
     }
 
     public function updateClient(){
 
-        $customer = new Customer();
-        $customer->email = $this->fields['email'];
-        $customer->first_name = $this->fields['first_name'];
-        $customer->last_name = $this->fields['last_name'];
-        $customer->update();
+        $client = new Customer();
+        $client->email = $this->fields['email'];
+        $client->first_name = $this->fields['first_name'];
+        $client->last_name = $this->fields['last_name'];
+        $client->update();
 
     }
 
     public function deleteClient(){
 
-        $customer = new Customer();
-        $customer->id = $this->fields['id'];
-        $customer->delete();
+        $client = new Customer();
+        $client->id = $this->fields['id'];
+        $client->delete();
 
     }
 
