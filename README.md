@@ -11,7 +11,7 @@ Obs: Please don't mind the poor frontend, that's only an example of usage 😋
 
 ## 📸 Screenshot
 
-<img src="https://user-images.githubusercontent.com/115879524/200075723-0bd2aac8-eb6a-4c2f-adb2-a0dd40fc9595.png" width="300" />
+<img src="https://user-images.githubusercontent.com/115879524/200075975-90bf56b8-6848-4137-bd51-fe7998a4e980.png" width="300" />
 
 ## 👀 Demo
 
