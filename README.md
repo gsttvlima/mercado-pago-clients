@@ -1,4 +1,4 @@
-# PHP API REST example
+# Mercado Pago API integration
 
 ## 👨🏻‍💻 Techs
 
