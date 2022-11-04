@@ -1,4 +1,4 @@
-# Mercado Pago API integration
+# Mercado Pago API integration (Clients)
 
 ## 👨🏻‍💻 Techs
 
