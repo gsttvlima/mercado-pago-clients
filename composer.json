@@ -1,0 +1,12 @@
+{
+    "name": "gsttvlima/mercado-pago",
+    "description": "Integração Mercado Pago (PHP)",
+    "autoload": {
+        "psr-4": {
+            "APP\\": "src/"
+        }
+    },
+    "require": {
+        "mercadopago/dx-php": "2.5.1"
+    }
+}
