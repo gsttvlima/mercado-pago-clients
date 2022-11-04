@@ -5,7 +5,7 @@ namespace APP;
 use MercadoPago\Customer;
 use APP\Curl;
 
-class Costumer{
+class Client{
 
     public $fields;
 
@@ -13,7 +13,7 @@ class Costumer{
         $this->$prop = $value;
     }
 
-    public function saveCostumer(){
+    public function saveClient(){
 
         $customer = new Customer();
         $customer->email = $this->fields['email'];
@@ -23,7 +23,7 @@ class Costumer{
 
     }
 
-    public function updateCostumer(){
+    public function updateClient(){
 
         $customer = new Customer();
         $customer->email = $this->fields['email'];
@@ -33,7 +33,7 @@ class Costumer{
 
     }
 
-    public function deleteCostumer(){
+    public function deleteClient(){
 
         $customer = new Customer();
         $customer->id = $this->fields['id'];
@@ -41,7 +41,7 @@ class Costumer{
 
     }
 
-    public function getCostumers(){
+    public function getClients(){
 
         $filters = @http_build_query($this->fields);
 

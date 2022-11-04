@@ -10,7 +10,7 @@ MercadoPago\SDK::setAccessToken($token);
 
 <hr>
 
-<b>Create a costumer</b><br /><br />
+<b>Create a customer</b><br /><br />
 
 <form method="POST">
     <input type="hidden" name="action" value="create" />
@@ -33,7 +33,7 @@ MercadoPago\SDK::setAccessToken($token);
 
 <hr>
 
-<b>Delete a costumer</b><br /><br />
+<b>Delete a client</b><br /><br />
 
 <form method="POST">
     <input type="hidden" name="action" value="delete" />
@@ -48,75 +48,75 @@ MercadoPago\SDK::setAccessToken($token);
 
 <hr>
 
-<b>Get all costumers</b><br /><br />
+<b>Get all clients</b><br /><br />
 
 <form method="POST">
     <input type="hidden" name="action" value="get" />
-    <button type="submit">Get all costumers</button>
+    <button type="submit">Get all clients</button>
 </form>
 
 <hr>
 
 <?php
 
-// Create a costumer
+// Create a client
 
 if (@$_POST["action"] === 'create') {
 
-    $costumer = new APP\Costumer();
-    $costumer->setProp('fields', [
+    $client = new APP\Client();
+    $client->setProp('fields', [
         'first_name' => $_POST["first_name"],
         'last_name' => $_POST["last_name"],
         'email' => $_POST["email"],
     ]);
-    $costumer->saveCostumer();
+    $client->saveClient();
 }
 
 
-// Delete a costumer
+// Delete a client
 
 if (@$_POST["action"] === 'delete') {
 
-    $costumer = new APP\Costumer();
-    $costumer->setProp('fields', [
+    $client = new APP\Client();
+    $client->setProp('fields', [
         'email' => $_POST["email"]
     ]);
-    $costumer = $costumer->getCostumers();
+    $client = $client->getClients();
 
     $formatter = new APP\Formatter();
 
-    $costumer = $formatter->jsonToObject($costumer);
+    $client = $formatter->jsonToObject($client);
 
-    foreach ($costumer->results as $costumer) {
+    foreach ($client->results as $client) {
 
-        $deleteCostumer = new APP\Costumer();
-        $deleteCostumer->setProp('fields', [
-            'id' => $costumer->id,
+        $deleteClient = new APP\Client();
+        $deleteClient->setProp('fields', [
+            'id' => $client->id,
         ]);
-        $deleteCostumer->deleteCostumer();
+        $deleteClient->deleteClient();
     }
 }
 
 
-// Get all costumers
+// Get all clients
 
 if (@$_POST["action"] === 'get') {
 
-    $costumers = new APP\Costumer();
-    $costumers = $costumers->getCostumers();
+    $clients = new APP\Client();
+    $clients = $clients->getClients();
 
     $formatter = new APP\Formatter();
 
-    $costumers = $formatter->jsonToObject($costumers);
+    $clients = $formatter->jsonToObject($clients);
 
-    echo '<b>All costumers</b><br/><br/>';
+    echo '<b>All clients</b><br/><br/>';
 
-    foreach ($costumers->results as $costumer) {
+    foreach ($clients->results as $client) {
 
-        echo "ID: {$costumer->id}<br/>";
-        echo "First Name: {$costumer->first_name}<br/>";
-        echo "Last Name: {$costumer->last_name}<br/>";
-        echo "E-mail: {$costumer->email}<br/><br/>";
+        echo "ID: {$client->id}<br/>";
+        echo "First Name: {$client->first_name}<br/>";
+        echo "Last Name: {$client->last_name}<br/>";
+        echo "E-mail: {$client->email}<br/><br/>";
 
     }
 }
