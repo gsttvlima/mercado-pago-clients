@@ -17,7 +17,7 @@
 
 ## 👀 Demo
 
-https://insider.blue/github/mercado-pago
+https://insider.blue/github/mercado-pago-clients
 
 ## 🤝 Contributing
 
