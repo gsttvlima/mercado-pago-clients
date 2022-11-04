@@ -5,13 +5,15 @@
 * PHP
 * Composer
 * PSR-4
+* CSS
+* Bootstrap
+* Javascript
+* jQuery
 * Mercado Pago API
-
-Obs: Please don't mind the poor frontend, that's only an example of usage 😋
 
 ## 📸 Screenshot
 
-<img src="https://user-images.githubusercontent.com/115879524/200075975-90bf56b8-6848-4137-bd51-fe7998a4e980.png" width="200" />
+<img src="https://user-images.githubusercontent.com/115879524/200085699-095c9505-5d94-4dd3-b1fa-a0b9a25a94ed.png" width="400" />
 
 ## 👀 Demo
 
