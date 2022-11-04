@@ -2,7 +2,7 @@
 
 require_once 'vendor/autoload.php';
 
-$token = '{SECRET_KEY}';
+$token = '{SECRET_KEY)'; // danger
 
 MercadoPago\SDK::setAccessToken($token);
 
@@ -10,21 +10,21 @@ MercadoPago\SDK::setAccessToken($token);
 
 <hr>
 
-<b>Create a customer</b><br /><br />
+<b>Create a client</b><br /><br />
 
 <form method="POST">
     <input type="hidden" name="action" value="create" />
     <div style="margin-bottom: 2px">
         <label for="first_name">First name</label><br />
-        <input type="text" name="first_name" />
+        <input type="text" required name="first_name" />
     </div>
     <div style="margin-bottom: 2px">
         <label for="last_name">Last name</label><br />
-        <input type="text" name="last_name" />
+        <input type="text" required name="last_name" />
     </div>
     <div style="margin-bottom: 2px">
         <label for="email">Email</label><br />
-        <input type="text" name="email" />
+        <input type="text" required name="email" />
     </div>
     <div style="margin-bottom: 2px">
         <button type="submit">Create</button>
